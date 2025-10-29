@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home • Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Your Name, Full Stack Developer." />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body onload="initPageChrome(); loadHome();">
+  <header class="header">
+    <div class="logo">Your Name</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle theme" class="theme-btn">
+      <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="avatar-wrap">
+            <img src="https://placehold.co/600x600" alt="Profile photo of Your Name" class="profile-pic-big" loading="eager" />
+          </div>
+        </div>
+        <div class="hero-right">
+          <h1>Hello, I’m <span id="home-name"></span> 👋</h1>
+          <h2 id="home-title" class="typewriter" aria-live="polite"></h2>
+          <p id="home-summary" class="muted"></p>
+          <div class="cta-buttons">
+            <a href="projects.html" class="btn">View Projects</a>
+            <a href="resume.html" class="btn outline">View Resume</a>
+            <a href="contact.html" class="btn">Contact Me</a>
+          </div>
+          <div id="home-skills" class="skills-preview mt-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div id="featured-projects" class="projects-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Your Name</footer>
+  <script src="script.js"></script>
+</body>
+</html>

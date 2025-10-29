@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initPageChrome();">
+  <header class="header">
+    <h1>Resume</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="resume.html" class="active">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+      <span class="theme-icon" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <main id="resume-page">
+    <div class="resume-header">
+      <h1>Your Name</h1>
+      <h2>Web Developer</h2>
+      <div class="resume-contact">
+        <span>Your Location</span>
+        <span>your.email@example.com</span>
+        <span>123-456-7890</span>
+      </div>
+    </div>
+
+    <section class="resume-section">
+      <h3>Summary</h3>
+      <p>
+        Highly motivated and detail-oriented web developer with a passion for building
+        responsive and user-friendly applications. Experienced in both front-end and
+        back-end development, with a strong foundation in modern web technologies and frameworks.
+      </p>
+    </section>
+
+    <section class="resume-section">
+      <h3>Professional Experience</h3>
+      <div class="resume-item">
+        <h4>Web Developer <span class="company">Company XYZ</span></h4>
+        <div class="dates">Jan 2023 - Present</div>
+        <ul>
+          <li>Developed and maintained several key features for the company’s main website using React and Node.js.</li>
+          <li>Collaborated with a team of designers and developers to create a seamless user experience.</li>
+          <li>Implemented RESTful APIs and integrated with various third-party services.</li>
+        </ul>
+        <div class="resume-projects">
+          <strong>Related Skills:</strong>
+          <div class="resume-skills">
+            <span class="resume-skill">React</span>
+            <span class="resume-skill">Node.js</span>
+            <span class="resume-skill">MongoDB</span>
+            <span class="resume-skill">Tailwind CSS</span>
+            <span class="resume-skill">Express.js</span>
+            <span class="resume-skill">PostgreSQL</span>
+            <span class="resume-skill">Firebase</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h3>Education</h3>
+      <div class="resume-item">
+        <h4>Bachelor of Science in Computer Science</h4>
+        <div class="company">University ABC</div>
+        <div class="dates">Graduated 2022</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Your Name</footer>
+  <script src="script.js"></script>
+</body>
+</html>
